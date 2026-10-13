@@ -2,7 +2,7 @@
 
                                             **Docker and Kubernetes Troubleshooting: Resolving CrashLoopBackOff**
 
-    **The CrashLoopBackOff error indicates a pod continuously restarting after failures.**
+**The CrashLoopBackOff error indicates a pod continuously restarting after failures.**
 
 Step 1: Examine container logs
 # Failing pod logs
@@ -28,6 +28,7 @@ image: busybox:1.36
 command: ['sh', '-c', 'until nc -z postgres-svc 5432; do sleep 2; done']
 
 **How to Diagnose ImagePullBackOff in Kubernetes**
+
 ImagePullBackOff means Kubernetes cannot download the specified Docker image.
 
 Essential checks
